@@ -1,0 +1,8 @@
+Run these in bash:
+pip install flask numpy numpy-stl cadquery trimesh
+sudo apt install cadquery
+sudo apt-get update
+sudo apt-get install libgl1-mesa-glx
+
+- works on .stl,.step, .obj, .ply, 
+- some test files are there in the test folder

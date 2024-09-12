@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload STL File</title>
+    <!-- Link to CSS file inside the static folder -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Upload Your 3D Model</h1>
+      <p>Please select an valid file to upload.</p>
+      <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".stl,.step,.obj,.ply" />
+        <input type="submit" value="Upload" />
+      </form>
+      <footer>Supported File Type: .stl, .step, .obj, .ply</footer>
+    </div>
+  </body>
+</html>

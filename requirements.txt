@@ -1,0 +1,5 @@
+Flask==2.3.3
+numpy
+numpy-stl
+trimesh-4.4.9
+cadquery
